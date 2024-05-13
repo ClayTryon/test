@@ -1,13 +1,148 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-  <title>Express</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="UTF-8" />
+    <title>Nutrition App</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="main.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
 <body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
-</body>
 
+    <div data-role="page" id="landing">
+
+        <div data-role="header" data-theme="b">
+            <h1>Home Page</h1>
+        </div>
+        
+        <div data-role="main" class="ui-content">
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                <li>
+                    <img src="workouts.png" alt="clipart of man on treadmill" width="300" height="300">
+                    <a href="#workout"> Add A Workout</a>
+                </li>
+                <li>
+                    <img src="nutrition.jpg" alt="clipart of steak dinner" width="300" height="300">
+                    <a href="#nutrition">Add Nutrition Intake</a>
+                </li>
+                <li>
+                    <img src="tracker.jpeg" alt="clipart of calendar" width="300" height="300">
+                    <a href="#tracker">Track Progress!</a>
+                </li>
+                </ul>
+                </div>
+        </div>
+
+        <div data-role="footer">
+        </div>
+    </div>
+
+    <div data-role="page" id="workout">
+
+        <div data-role="header" data-theme="b">
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                <li><a href="#landing">Home Page</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#tracker">Tracker</a></li>
+                </ul>
+                </div>
+        
+        </div>
+        
+        <div data-role="main" class="ui-content">
+            <h1>Add Your Workout</h1>
+
+            <h2>Workout Duration (Minutes)</h2>
+            <input type="input"></input>
+
+            <h2>Type of Workout</h2>
+            <input type="input"></input>
+
+            <h2>Workout date</h2>
+            <input type="date"></input>
+
+            <h2>Calories Burnt</h2>
+            <input type="input"></input>
+
+            <button>Submit</button>
+            </div>
+
+        <div data-role="footer">
+            <p>This is a placeholder so I can see it works</p>
+        </div>
+    </div>
+
+    <div data-role="page" id="nutrition">
+
+        <div data-role="header" data-theme="b">
+            <h1>Nutrition</h1>
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                <li><a href="#landing">Home Page</a></li>
+                <li><a href="#workout">Workouts</a></li>
+                <li><a href="#tracker">Tracker</a></li>
+                </ul>
+                </div>
+        </div>
+        
+        <div data-role="main" class="ui-content">
+            <h1>Add Your Nutrition</h1>
+
+            <h2>What did you eat?</h2>
+            <input type="input"></input>
+
+       
+           <label for="mealType"><h2>What meal was this?</h2></label>
+           <select name="mealType" id="meals">
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="snack">Snacks</option>
+
+           </select>
+
+            <h2>Todays date</h2>
+            <input type="date"></input>
+
+            <h2>Calories</h2>
+            <input type="input"></input>
+
+            <button>Submit</button>
+            </div>
+        </div>
+
+        <div data-role="footer">
+            <p>Placeholder for now</p>
+        </div>
+    </div>    <div data-role="page" id="tracker">        
+        <div data-role="header" data-theme="b">
+            <h1>Tracker</h1>
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                <li><a href="#landing">Home Page</a></li>
+                <li><a href="#workout">Workouts</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                </ul>
+                </div>
+        </div>
+
+        <div data-role="content" id="ui-content">
+            <h1>Tracker</h1>
+
+            <h2>Choose Date to Review</h2>
+        <input type="date"></input>
+
+            <p>This page does not have the other functions from the demo yet, as I haven't made the JS work yet</p>
+        </div>
+
+        <div data-role="footer">
+        </div>
+    </div>
+
+
+</body>
 </html>
